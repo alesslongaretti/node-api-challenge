@@ -40,13 +40,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+Express is a Node.Js module. Express is compatible with connect middleware.
+
 - [ ] Describe Middleware?
+
+There are different types of middleware: built-in, third-party and custom middleware. Middleware is like an array of functions that get executed in the order they are introduced into the server code.
 
 - [ ] Describe a Resource?
 
+Everything is a resource, each resource is accessible via a unique URI.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+Sending back a 200 OK status code.
+
 - [ ] How can we partition our application into sub-applications?
+
+Express Routers are a way to split an app into sub-applications to make it more modular and easier to maintain.
 
 ## Minimum Viable Product
 
