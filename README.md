@@ -38,30 +38,30 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
-- [ ] Mention two parts of Express that you learned about this week.
+- [√] Mention two parts of Express that you learned about this week.
 
 Express is a Node.Js module. Express is compatible with connect middleware.
 
-- [ ] Describe Middleware?
+- [√] Describe Middleware?
 
 There are different types of middleware: built-in, third-party and custom middleware. Middleware is like an array of functions that get executed in the order they are introduced into the server code.
 
-- [ ] Describe a Resource?
+- [√] Describe a Resource?
 
 Everything is a resource, each resource is accessible via a unique URI.
 
-- [ ] What can the API return to help clients know if a request was successful?
+- [√] What can the API return to help clients know if a request was successful?
 
 Sending back a 200 OK status code.
 
-- [ ] How can we partition our application into sub-applications?
+- [√] How can we partition our application into sub-applications?
 
 Express Routers are a way to split an app into sub-applications to make it more modular and easier to maintain.
 
 ## Minimum Viable Product
 
-- [ ] Configure an _npm script_ named _"server"_ that will execute your code using _nodemon_. Make _nodemon_ be a development time dependency only, it shouldn't be deployed to production.
-- [ ] Configure an _npm script_ named _"start"_ that will execute your code using _node_.
+- [√] Configure an _npm script_ named _"server"_ that will execute your code using _nodemon_. Make _nodemon_ be a development time dependency only, it shouldn't be deployed to production.
+- [√] Configure an _npm script_ named _"start"_ that will execute your code using _node_.
 
 Design and build the necessary endpoints to:
 

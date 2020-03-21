@@ -1,20 +1,23 @@
 const express = require('express');
 
-const actionRouter = require('./data/helpers/action-router.js');
+const actionRouter = require('./routers/action-router.js');
 
-const projectRouter = require('./data/helpers/project-router.js');
+const projectRouter = require('./routers/project-router.js');
 
-const app = express();
+const server = express();
 
-app.use(express.json());
+server.use(express.json());
 
-app.use('/api/action', actionRouter);
-app.use('api/project', projectRouter);
+server.use('/api/project', projectRouter);
+server.use('/api/action', actionRouter);
 
-app.get('/', (req,res) => {
+
+server.get('/', (req,res) => {
     res.send(`
     <h2>Welcome to the Action and Project api</h2>`
     )
 });
 
-module.exports = app;
+
+
+module.exports = server;
