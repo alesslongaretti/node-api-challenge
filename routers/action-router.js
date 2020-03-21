@@ -35,19 +35,16 @@ router.post('/', (req,res) => {
 
 // PUT
 router.put('/:id', (req,res) => {
+    const id = req.params.id
     const changes = req.body;
-    if(!changes) {
-        res.status(400).json({ message: "missing information"})
-    } else {
-        Action.update(req.params.id, changes)
-            .then(action => {
-                if(action) {
-                res.status(200).json({ message: "Updated action", action})
-            } else {
-                res.status(400).json({ message: "error"})
-            }
+
+    Action.update(id, changes)
+        .then( action => {
+            res.status(200).json({ message: 'Updated action', action})
         })
-    }
+        .catch(error => {
+            res.status(500).json({ message: "Could not update action", error})
+        })
 
 })
 
@@ -68,6 +65,7 @@ router.delete('/:id', (req,res) => {
     })
     
 })
+
 
 
 module.exports = router;
